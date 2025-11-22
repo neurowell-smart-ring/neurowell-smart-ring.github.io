@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Neurowell – AI Smart Ring</title>
+
+<style>
+    body {
+        margin: 0;
+        font-family: Arial, Helvetica, sans-serif;
+        background: #ffffff;
+        color: #333;
+        line-height: 1.6;
+    }
+
+    /* NAVBAR */
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 18px 40px;
+        background: #f8f8f8;
+        box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+        position: sticky;
+        top: 0;
+        z-index: 999;
+    }
+
+    .logo {
+        font-size: 26px;
+        font-weight: bold;
+        color: #2b7cff;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .logo-icon {
+        width: 40px;
+        height: 40px;
+        background: #2b7cff;
+        color: #fff;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: bold;
+        font-size: 18px;
+    }
+
+    .menu a {
+        margin: 0 12px;
+        text-decoration: none;
+        color: #333;
+        font-weight: bold;
+        font-size: 15px;
+    }
+    .menu a:hover {
+        color: #2b7cff;
+    }
+
+    /* HERO SECTION */
+    .hero {
+        background: url("photo_2025-11-22_11-59-04.jpg") center/cover no-repeat;
+        padding: 140px 40px;
+        text-align: center;
+        color: #fff;
+    }
+    .hero h1 {
+        font-size: 48px;
+        margin-bottom: 12px;
+        text-shadow: 0 3px 6px rgba(0,0,0,0.4);
+    }
+    .hero p {
+        font-size: 18px;
+        max-width: 700px;
+        margin: auto;
+    }
+
+    /* SECTION WRAPPER */
+    section {
+        padding: 70px 40px;
+        max-width: 1100px;
+        margin: auto;
+    }
+
+    h2 {
+        text-align: center;
+        font-size: 32px;
+        margin-bottom: 30px;
+        color: #2b7cff;
+    }
+
+    /* ABOUT CARD */
+    .about-card {
+        background: #fff;
+        padding: 30px;
+        border-radius: 10px;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    }
+
+    /* FEATURES GRID */
+    .features-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 20px;
+    }
+
+    .feature-box {
+        background: #fff;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+        text-align:center;
+    }
+
+    .feature-box h3 {
+        color: #2b7cff;
+    }
+
+    /* METHODOLOGY */
+    .method {
+        text-align: center;
+    }
+    .method img {
+        width: 55%;
+        border-radius: 14px;
+        margin-top: 20px;
+        box-shadow: 0 4px 14px rgba(0,0,0,0.12);
+
+    }
+
+    /* TEAM SECTION */
+.team-grid {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.team-member {
+    width: 260px;
+    background: #fff;
+    padding: 22px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+.team-member img {
+    width: 120px;
+    height: 120px;
+    border-radius: 12px;
+    object-fit: cover;
+}
+
+/* CONTACT SECTION */
+.contact-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.contact-card {
+    width: 260px;
+    background: #fff;
+    padding: 20px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+/* CONCEPT PHOTOS */
+.concept-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    justify-items: center;
+    align-items: center;
+}
+
+
+.concept-photo img {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 12px;
+    box-shadow: 0 4px 14px rgba(0,0,0,0.12);
+    transition: transform 0.3s ease;
+}
+
+.concept-photo img:hover {
+    transform: scale(1.05);
+}
+
+footer {
+    background-color: #000;    /* black background */
+    color: #fff;               /* white text */
+    text-align: center;        /* center the text */
+    padding: 20px 0;           /* vertical padding */
+    font-size: 16px;
+}
+
+
+</style>
+</head>
+<body>
+
+<!-- NAVBAR -->
+<div class="navbar">
+    <div class="logo">
+        <div class="logo-icon">NW</div>
+        Neurowell
+    </div>
+
+    <div class="menu">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#features">Features</a>
+        <a href="#method">Methodology</a>
+        <a href="#team">Team</a>
+        <a href="#contact">Contact</a>
+    </div>
+</div>
+
+<!-- HERO -->
+<div class="hero" id="home">
+    <h1>Neurowell – AI Smart Ring</h1>
+    <p>A revolutionary wearable that understands your body and mind together.</p>
+</div>
+
+<!-- ABOUT -->
+<section id="about">
+    <h2>About Neurowell</h2>
+    <div class="about-card">
+        <p>
+            Neurowell is a pioneering AI-enabled smart ring designed to deliver the first truly holistic view of human health by concurrently tracking both physiological vitals and cognitive state markers. Traditional wearables frequently misinterpret the body’s signals, often conflating cardiovascular responses caused by physical exertion with those triggered by mental stress or emotional overload. Neurowell overcomes this limitation through its intelligent dual-sensor architecture.
+            <br><br>
+            Equipped with medical-grade PPG sensors for precise cardiovascular monitoring and advanced EDA electrodes for measuring electrodermal activity—a direct indicator of sympathetic nervous system arousal—Neurowell captures both physical and emotional health cues with exceptional accuracy. Its proprietary AI engine analyzes heart rate patterns, sweat gland activity, motion signals, and situational context to distinguish between “good stress,” such as exercise, and “bad stress,” such as anxiety or cognitive fatigue.
+            <br><br>
+            When elevated mental stress is detected, the ring initiates a real-time biofeedback loop using subtle haptic alerts. This directs users to scientifically guided stress-relief exercises on the companion app, enabling proactive management of mental and emotional strain. Compact, durable, and discreet, Neurowell is more than a fitness tracker—it is an all-in-one health companion engineered for modern well-being.
+        </p>
+    </div>
+</section>
+
+<!-- FEATURES -->
+<section id="features">
+    <h2>Features</h2>
+
+    <div class="features-grid">
+        <div class="feature-box">
+            <h3>🧠 Real-Time Cognitive Stress Detection</h3>
+            <p>Utilizing integrated Electrodermal Activity (EDA) sensors to measure skin conductance changes, providing an objective, real-time biomarker for mental load and emotional stress.</p>
+        </div>
+
+        <div class="feature-box">
+            <h3>❤️ Advanced Physical Health Monitoring</h3>
+            <p>Comprehensive tracking of foundational physical metrics, including Heart Rate, Heart Rate Variability (HRV), blood oxygen (SpO2), sleep stages, and activity levels via optical and motion sensors.</p>
+        </div>
+
+        <div class="feature-box">
+            <h3>⚡ AI-Driven "Dual-Mode" Analysis Engine</h3>
+            <p>A proprietary machine learning system that fuses multivariate sensor data to accurately differentiate between physiological arousal caused by physical exertion ("good stress") versus cognitive strain ("bad stress").</p>
+        </div>
+
+        <div class="feature-box">
+            <h3>🔄 Proactive Biofeedback Loop</h3>
+            <p>A closed-loop system that not only detects elevated cognitive stress but immediately provides discreet haptic alerts on the ring and guides the user through real-time interventions to reduce mental fatigue.</p>
+        </div>
+    </div>
+</section>
+
+<!-- METHODOLOGY -->
+<section id="method" style="display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center;">
+    <h2>Methodology</h2>
+
+    <div class="method">
+        <p>Neurowell’s AI-driven architecture combines multi-sensor data processing, EDA-based emotional analytics, cardiovascular modeling, motion interpretation, and a closed-loop intervention engine to create a unified health intelligence system.</p>
+
+        <img src="neurowell methodology.png" 
+             alt="Methodology Image" 
+             style="display: block; margin: 0 auto; width: 100%; height: auto;">
+
+    </div>
+</section>
+
+<!-- CONCEPT PHOTOS -->
+<section id="concept-photos">
+    <h2>Concept Photos</h2>
+
+    <div class="concept-grid">
+        <div class="concept-photo">
+            <img src="Untitled design.png" alt="Concept Photo 1">
+        </div>
+        <div class="concept-photo">
+            <img src="photo_2025-08-18_20-25-46 (4).jpg" alt="Concept Photo 2">
+        </div>
+        <div class="concept-photo">
+            <img src="Picture2.png" alt="Concept Photo 3">
+        </div>
+    </div>
+</section>
+
+
+
+<!-- TEAM -->
+<section id="team">
+    <h2>Our Team</h2>
+
+    <div class="team-grid">
+        <div class="team-member">
+            <img src="fb7-37.jpg" alt="">
+            <h4>Sabit Ahmed Preanto</h4>
+            <p>Sensor & Hardware Lead</p>
+        </div>
+
+        <div class="team-member">
+            <img src="tp.jpg" alt="">
+            <h4>Tapon Paul</h4>
+            <p>AI & System Integration</p>
+        </div>
+
+        <div class="team-member">
+            <img src="abid-36-02.jpg" alt="">
+            <h4>Abid Khan</h4>
+            <p>Prototype Design</p>
+        </div>
+
+
+    </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+    <h2>Contact Us</h2>
+
+    <div class="contact-box">
+        <div class="contact-card">
+            <h4>Sabit Ahmed Preanto</h4>
+            <a href="mailto:preanto15-5059@diu.edu.bd">preanto15-5059@diu.edu.bd</a>
+        </div>
+
+        <div class="contact-card">
+            <h4>Tapon Paul</h4>
+            <a href="mailto:paul15-5086@diu.edu.bd">paul15-5086@diu.edu.bd</a>
+        </div>
+
+        <div class="contact-card">
+            <h4>Abid Khan</h4>
+            <a href="mailto:khan15-4894@diu.edu.bd">khan15-4894@diu.edu.bd</a>
+        </div>
+    </div>
+</section>
+
+
+<footer>
+    © 2025 Neurowell. All Rights Reserved.
+</footer>
+
+</body>
+</html>
